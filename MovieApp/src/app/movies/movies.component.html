@@ -1,0 +1,17 @@
+  
+<movie-detail [abc]="selectedMovie"></movie-detail>
+
+<div class="card">
+    <div class="card-header">
+        {{ title }}
+    </div>
+    <ul class="list-group list-group-flush">
+        <li *ngFor="let city of  movies" (click)= "onSelect(city)" class="list-group-item" [class.active]="city===selectedMovie" >
+            <span class="badge badge-primary">{{city.id}}</span> {{city.name}}
+            
+            <span class="close">x</span>
+        </li>
+    </ul>
+    <a routerLink="/asayfasi"> A Sayfası</a>
+</div>
+<!-- Buraya kadar birinci kısım-->

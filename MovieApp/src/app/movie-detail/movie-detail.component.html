@@ -1,0 +1,15 @@
+<div class="card"  *ngIf="abc">
+    <div class="card-body">
+        <span class="badge badge-warning">
+            id = {{ abc.id }} name= {{ abc.name }}
+        </span>
+
+        <div class="input-group">
+            <input type="text" [(ngModel)]="abc.name" class="form-control" >
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+
